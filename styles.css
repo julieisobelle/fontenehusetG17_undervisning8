@@ -150,8 +150,20 @@ img {
 /* Metode 2: Samlet media på bunnen av koden. Hovedsaklig brukt til å endre retning på innhold og å skjule/vise innhold ut i fra hvilken størrelse vi er på */
 @media (max-width: 426px) {
   /* HEADER */
+  .headerNav {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
   .navList {
     display: none;
+  }
+
+  .navHamburgerList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .hamburgerIcon {
