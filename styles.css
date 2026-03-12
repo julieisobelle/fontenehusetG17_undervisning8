@@ -20,7 +20,7 @@ img {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline; /* Oppdatert fra 'center' for å alltid ha logo og nav på lik linje */
 }
 
 .navList {
