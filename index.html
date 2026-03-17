@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
+    <!-- Lagt til en font fra fonts.google.com
+         spesifikt valgt å legge til lenken i head i HTML 
+     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -13,9 +20,16 @@
 
       <nav class="headerNav">
         <ul id="navList" class="navList">
-          <li>Hjem</li>
-          <li>Om meg</li>
-          <li>Prosjekter</li>
+          <!-- Bookmark anchor teknikken med å bruke anchors som tar i mot en id fra lenger ned på siden. Vi har spesifikt brukt norske navn for id-ene for det blir en del av adressenavnet til nettsiden.  -->
+          <a href="#hjem">
+            <li>Hjem</li>
+          </a>
+          <a href="#om-meg">
+            <li>Om meg</li>
+          </a>
+          <a href="#prosjekter">
+            <li>Prosjekter</li>
+          </a>
         </ul>
 
         <!-- Lagt til et ekstra element for å vise til hva vi skal gå gjennom på torsdag med JavaScript -->
@@ -24,7 +38,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section id="hjem" class="hero">
         <h1>Velkommen til min side!</h1>
 
         <div class="heroIntro">
@@ -39,7 +53,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section id="om-meg" class="about">
         <div class="aboutTextContainer">
           <h2 class="aboutTitle">Om meg</h2>
 
@@ -66,7 +80,7 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section id="prosjekter" class="projects">
         <h2 class="projectsTitle">Prosjekter</h2>
 
         <ul class="projectsList">
