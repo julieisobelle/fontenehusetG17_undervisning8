@@ -8,27 +8,15 @@ body {
   margin: 0;
   font-size: 1.6rem; /* 16px */
   padding-inline: 1.6rem; /* 16px. Alt i body er litt fra kanten til nettsiden */
-  /* Tar i bruk font familie vi henter fra fonts.google på all tekst */
-  font-family: "Roboto";
 }
-
-/* Spesifikt setter opp en font familie som skal brukes på desse elementene */
-h1, h2, h3 {
-  font-family: "Bebas Neue";
-}
-
 img {
   width: 20rem; /* 200px */
   height: 20rem; /* 200px */
-  /* Tok en farge her fra Figma paletten vår som vi fant fra coolors.co */
-  background-color: #5F506B;
+  background-color: black;
 }
 
 /* HEADER */
 .header {
-  /* I figma ble vi enige om at header burde være med på siden alltid når vi har trykkbar navigasjon. */
-  position: sticky;
-  top: 0;
   background-color: white;
   display: flex;
   justify-content: space-between;
